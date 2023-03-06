@@ -1,15 +1,13 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <PollsList />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
+import PollsList from './components/Polls/PollsList'
+export default { 
   name: 'App',
   components: {
-    HelloWorld
+    PollsList
   }
 }
 </script>
