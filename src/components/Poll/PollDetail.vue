@@ -15,7 +15,7 @@ export default {
     async getPollResult() {
       const config = {
         method: "get",
-        url: `http://localhost:8081/polls/${this.idRoute}/results`,
+        url: `http://django-vue-pools.vercel.app/polls/${this.idRoute}/results`,
       };
       axios(config).then((response) => (this.choices = response.data));
     },
@@ -28,7 +28,7 @@ export default {
 
       var config = {
         method: "put",
-        url: `http://localhost:8081/polls/${choice.id}/vote`,
+        url: `http://django-vue-pools.vercel.app/polls/${choice.id}/vote`,
         headers: {
           "Content-Type": "application/json",
         },

@@ -33,7 +33,7 @@ export default {
   methods: {
     async getPolls() {
       await axios
-        .get("http://localhost:8081/polls/")
+        .get("http://django-vue-pools.vercel.app/polls/")
         .then((response) => (this.polls = response.data.questions));
     },
     formatDate(dateString) {
