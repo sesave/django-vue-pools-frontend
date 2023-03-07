@@ -14,7 +14,7 @@ export default {
       const id = this.$route.params.id;
       const config = {
         method: "get",
-        url: `http://django-vue-pools.vercel.app/polls/${id}/results`,
+        url: `https://django-vue-pools.vercel.app/polls/${id}/results`,
       };
       axios(config).then((response) => (this.choices = response.data));
     },
