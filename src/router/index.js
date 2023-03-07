@@ -1,6 +1,7 @@
 import { createWebHistory, createRouter } from "vue-router";
 import PollsList from "../components/Polls/PollsList";
 import PollDetail from "../components/Poll/PollDetail";
+import PollResults from "../components/Poll/PollResults";
 
 const routes = [
   {
@@ -10,8 +11,13 @@ const routes = [
   },
   {
     path: "/poll/:id",
-    name: "Poll Detaisl",
+    name: "Poll Details",
     component: PollDetail,
+  },
+  {
+    path: "/results/:id/",
+    name: "Poll Results",
+    component: PollResults,
   },
 ];
 
